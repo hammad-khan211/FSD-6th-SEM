@@ -30,11 +30,16 @@ const appendFileSync = (file,data) => {
         console.log("Some error occured during Appending"); 
     }
 }
+console.log(1);
+readFileSync("./example.txt")
+console.log(2);
 
-readFileSync("./example.txt");
-
+console.log(3);
 writeFileSync("./example.txt" ,
     "this data has been written through sync function of fs module");
+console.log(4);
 
+console.log(5);
 appendFileSync("./example.txt",
     "This data has been appended through sync function of fs");
+    console.log(6);
