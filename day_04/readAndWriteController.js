@@ -23,9 +23,9 @@ const writeFileData = async (path , data) => {
 readFileData("./students.json");
 writeFileData("./students.json" , {
     id: 13,
-    first_name: "Inshu",
-    last_name: "Pervez",
-    email: "inshu@utexas.edu",
+    first_name: "Raj",
+    last_name: "verma",
+    email: "raj@utexas.edu",
     gender: "female",
     ip_address: "1.21.96.120"
 });
