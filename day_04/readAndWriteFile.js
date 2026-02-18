@@ -17,27 +17,27 @@ export const writeFile = async (path , data) => {
         console.log("Unabe to write data to file using writeFile fs");
     }
 }
-const students = [
-    {
-        "id": 11,
-        "first_name": "Aditya",
-        "last_name": "Tayal",
-        "email": "aditayal@utexas.edu",
-        "gender": "Tran",
-        "ip_address": "1.21.96.120"
-    },
-    {
-        "id": 12,
-        "first_name": "Ahmad",
-        "last_name": "Hammad",
-        "email": "hamad2@utexas.edu",
-        "gender": "male",
-        "ip_address": "1.21.96.120"
-    }    
-]
-writeFile("./students.json" , students)
+// const students = [
+//     {
+//         "id": 11,
+//         "first_name": "Aditya",
+//         "last_name": "Tayal",
+//         "email": "aditayal@utexas.edu",
+//         "gender": "Tran",
+//         "ip_address": "1.21.96.120"
+//     },
+//     {
+//         "id": 12,
+//         "first_name": "Ahmad",
+//         "last_name": "Hammad",
+//         "email": "hamad2@utexas.edu",
+//         "gender": "male",
+//         "ip_address": "1.21.96.120"
+//     }    
+// ]
+// writeFile("./students.json" , students)
 
-readFile("./students.json")
-    .then((data) => console.log(data))
-    .catch((error) => console.log("Some error occured"));
+// readFile("./students.json")
+//     .then((data) => console.log(data))
+//     .catch((error) => console.log("Some error occured"));
 
