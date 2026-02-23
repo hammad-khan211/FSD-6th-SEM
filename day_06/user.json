@@ -1,0 +1,51 @@
+[{
+  "name": "Joana",
+  "email": "Moxsom",
+  "password": "jmoxsom0@tumblr.com",
+  "gender": "Female"
+}, {
+  "name": "Franklin",
+  "email": "Carass",
+  "password": "fcarass1@businessweek.com",
+  "gender": "Male"
+}, {
+  "name": "Tabby",
+  "email": "Sherman",
+  "password": "tsherman2@illinois.edu",
+  "gender": "Male"
+}, {
+  "name": "Barbabra",
+  "email": "Amberson",
+  "password": "bamberson3@bing.com",
+  "gender": "Female"
+}, {
+  "name": "Audy",
+  "email": "Filshin",
+  "password": "afilshin4@java.com",
+  "gender": "Female"
+}, {
+  "name": "Weston",
+  "email": "Merkel",
+  "password": "wmerkel5@weather.com",
+  "gender": "Male"
+}, {
+  "name": "Marlow",
+  "email": "Connew",
+  "password": "mconnew6@nature.com",
+  "gender": "Male"
+}, {
+  "name": "Michael",
+  "email": "Delagua",
+  "password": "mdelagua7@berkeley.edu",
+  "gender": "Male"
+}, {
+  "name": "Quint",
+  "email": "Semarke",
+  "password": "qsemarke8@blog.com",
+  "gender": "Male"
+}, {
+  "name": "Eugenia",
+  "email": "Inkster",
+  "password": "einkster9@usatoday.com",
+  "gender": "Female"
+}]
