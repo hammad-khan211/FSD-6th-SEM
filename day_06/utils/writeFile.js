@@ -1,4 +1,3 @@
-import { stat } from "fs";
 import fs from "fs/promises";
 export const writeFile = async(path , data) => {
     let status = 0;
