@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 
-const readFile = async(path) => {
+export const readFile = async(path) => {
     try {
         const data = await fs.readFile(path,"utf-8");
         return JSON.parse(data);
