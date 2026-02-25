@@ -32,6 +32,6 @@ const changePassword = async (userDetails) => {
 }
 
 changePassword({
-    "email" : "ahmadhammadkhan21112005@gmail.com",
-    "password" : "hammad@new"
+    "email" : "adityatayal@gmail.com",
+    "password" : "aditayal19"
 }).then((response) => console.log(response));

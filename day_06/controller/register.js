@@ -37,8 +37,8 @@ const userRegistration = async ( userDetails ) => {
 }
 
 userRegistration({
-    "name": "Aryan Gupta",
-    "email" : "aryangupta@gmail.com",
-    "password" : "ari66",
+    "name": "Ahmad Hammad Khan",
+    "email" : "ahmadhammadkhan21112005@gmail.com",
+    "password" : "hammad@2203",
     "gender" : "Male"
 }).then((response) => console.log(response));

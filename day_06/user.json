@@ -60,12 +60,6 @@
     "gender": "Female"
   },
   {
-    "name": "Ahmad Hammad",
-    "email": "ahmadhammadkhan21112005@gmail.com",
-    "password": "hammad@new",
-    "gender": "Male"
-  },
-  {
     "name": "Ahmad Hamza",
     "email": "ahmadhamzakhanr8@gmail.com",
     "password": "hamza@123",
@@ -74,13 +68,19 @@
   {
     "name": "Aditya tayal",
     "email": "adityatayal@gmail.com",
-    "password": "adi19",
+    "password": "aditayal19",
     "gender": "Male"
   },
   {
     "name": "Aryan Gupta",
     "email": "aryangupta@gmail.com",
     "password": "ari66",
+    "gender": "Male"
+  },
+  {
+    "name": "Ahmad Hammad Khan",
+    "email": "ahmadhammadkhan21112005@gmail.com",
+    "password": "hammad@2203",
     "gender": "Male"
   }
 ]

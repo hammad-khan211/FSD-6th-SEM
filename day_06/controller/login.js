@@ -34,5 +34,5 @@ const userLogin = async(userDetail) => {
 
 userLogin({
   email: "ahmadhammadkhan21112005@gmail.com",
-  password: "hammad@new"
+  password: "hammad@2203"
 }).then((response) => console.log(response));
