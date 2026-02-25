@@ -64,5 +64,11 @@
     "email": "ahmadhammadkhan21112005@gmail.com",
     "password": "ahmad@123",
     "gender": "Male"
+  },
+  {
+    "name": "Ahmad Hamza",
+    "email": "ahmadhamzakhanr8@gmail.com",
+    "password": "hamza@123",
+    "gender": "Male"
   }
 ]

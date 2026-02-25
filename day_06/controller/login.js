@@ -19,6 +19,6 @@ const userLogin = async(userDetail) => {
 }
 
 userLogin({
-  email: "mmervyn8@qq.com",
-  password: "jV5\\s+Ia/ah"
+  email: "ahmadhammadkhan21112005@gmail.com",
+  password: "ahmad@123"
 });

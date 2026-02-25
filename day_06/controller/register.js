@@ -34,8 +34,8 @@ const userRegistration = async ( userDetails ) => {
 }
 
 userRegistration({
-    "name": "Ahmad Hammad",
-    "email" : "ahmadhammadkhan21112005@gmail.com",
-    "password" : "ahmad@123",
+    "name": "Ahmad Hamza",
+    "email" : "ahmadhamzakhanr8@gmail.com",
+    "password" : "hamza@123",
     "gender" : "Male"
 })
