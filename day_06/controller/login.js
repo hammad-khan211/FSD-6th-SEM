@@ -3,22 +3,36 @@ const FILE = "../user.json";
 const userLogin = async(userDetail) => {
     const { email , password } = userDetail;
     const users = await readFile(FILE);
+    let response = {
+        status : false,
+        message : ""
+    };
     if(users.length === 0){
-        console.log("User does not exist");
-        return;
+        response.status = false;
+        response.message = "Use does not exist";
+        return response;
     }
 
     const user = users.find((u) => u.email===email);
     
     if(!user){
-        console.log("user does not exist");
-        return;
+        response.status = false;
+        response.message = "User does not exist";
+        return response;
     }
-    (user.password === password ? console.log("Login Successful") : console.log("Incorrect Password"));
+    if (user.password === password) {
+    response.status = true;
+    response.message = "Login Successful";
+    } else {
+    response.status = false;
+    response.message = "Incorrect Password";
+    }
 
-}
+  return response;
+
+};
 
 userLogin({
   email: "ahmadhammadkhan21112005@gmail.com",
-  password: "ahmad@123"
-});
+  password: "hammad@new"
+}).then((response) => console.log(response));

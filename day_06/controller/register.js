@@ -6,8 +6,7 @@ const FILE = "../user.json";
 const register = async (users , userDetails) => {
     const updatedUser = [...users , userDetails];
     const response = await writeFile(FILE , updatedUser);
-    console.log(response.message);
-    return;
+    return response;
 }
 
 const userRegistration = async ( userDetails ) => {
@@ -30,12 +29,16 @@ const userRegistration = async ( userDetails ) => {
         return;
     }
 
-    register(users , userDetails);
+    const response = await register(users , userDetails);
+    return response.status === 201 ?
+    {message : "User has registered successfully" , status : 200} :
+    {message : "Unable to register user" , status : 500}
+
 }
 
 userRegistration({
-    "name": "Ahmad Hamza",
-    "email" : "ahmadhamzakhanr8@gmail.com",
-    "password" : "hamza@123",
+    "name": "Aryan Gupta",
+    "email" : "aryangupta@gmail.com",
+    "password" : "ari66",
     "gender" : "Male"
-})
+}).then((response) => console.log(response));

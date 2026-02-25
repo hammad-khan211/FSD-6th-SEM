@@ -70,5 +70,17 @@
     "email": "ahmadhamzakhanr8@gmail.com",
     "password": "hamza@123",
     "gender": "Male"
+  },
+  {
+    "name": "Aditya tayal",
+    "email": "adityatayal@gmail.com",
+    "password": "adi19",
+    "gender": "Male"
+  },
+  {
+    "name": "Aryan Gupta",
+    "email": "aryangupta@gmail.com",
+    "password": "ari66",
+    "gender": "Male"
   }
 ]
