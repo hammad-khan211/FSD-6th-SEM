@@ -45,4 +45,4 @@ const deleteFileData = async (email) => {
     }
 };
 
-deleteFileData("ahmadhammadkhan21112005@gmail.com").then((response) => console.log(response));
+deleteFileData("ecesco7@meetup.com").then((response) => console.log(response));
