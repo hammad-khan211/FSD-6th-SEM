@@ -1,8 +1,10 @@
 import {readFile} from "../utils/readFile.js";
-const FILE = "../user.json";
-const userLogin = async(userDetail) => {
+// const FILE = "../user.json";
+export const userLogin = async(userDetail,FILE) => {
     const { email , password } = userDetail;
     const users = await readFile(FILE);
+    console.log("users",users);
+    
     let response = {
         status : false,
         message : ""
@@ -32,7 +34,7 @@ const userLogin = async(userDetail) => {
 
 };
 
-userLogin({
-  email: "ahmadhammadkhan21112005@gmail.com",
-  password: "hammad@2203"
-}).then((response) => console.log(response));
+// userLogin({
+//   email: "ahmadhammadkhan21112005@gmail.com",
+//   password: "hammad@2203"
+// }).then((response) => console.log(response));
