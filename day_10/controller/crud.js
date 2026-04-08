@@ -1,43 +1,48 @@
 import dbConnect from "../config/db.js";
 import User from "../models/User.js";
-dbConnect();
-const createUser = async(user) => {
+// dbConnect();
+export const createUser = async(user) => {
     try {
         const createdUser = await User.create(user);
-        console.log("User is created successfully");        
+        return { status : 200 , message : " User has been created successfully"};      
     } catch (error) {
-        console.log("Unable to create User" , error.message);
+        return { status : 500 , message : " Unable to create User"};  
     }
 }
-const readUsers = async () => {
+export const readUsers = async (req,res) => {
     try {
         const users = await User.find();
-        console.log(users);
+        res.status(200).json({data : users , message : "successful"})
     } catch (error) {
-        console.log("Unable to read users" , error.message);
+        res.status(500).json({message : error.message}); 
     }
 }
 
-const updateUsers = async(email , userDetails) => {
+export const updateUsers = async(email , userDetails) => {
     try {
         await User.updateOne({email : email},{$set : userDetails})
-        console.log("User has been updated successfully ");
+        return { status : 200 , message : " User has been updated successfully"};  
     } catch (error) {
-        console.log("Cannot update user " , error.message);
+        return { status : 500 , message : " Unable to update Users"};  
     }
 }
 
-const deleteUser = async(email) => {
+export const deleteUser = async(email) => {
     try {
-        await User.findOneAndDelete({email : email});
-        console.log("USer deleted successfully");
+        const deletedUser = await User.findOneAndDelete({email : email});
+        return deletedUser ? { status : 200 , message : " User has been deleted successfully"} :{ status : 500 , message : " User doest not exist"}; 
+        
     } catch (error) {
-        console.log("Some error occured while deleting the user", error.message);
+        return { status : 500 , message : " Unable to delete Users"};
     }
 }
-deleteUser("abcd@gmail.com");
+ 
+// deleteUser("abcd@gmail.com");
+
 // updateUsers("abcd@gmail.com" , {password: "newabc123"});
+
 // readUsers();
+
 // createUser(
 //     {
 //         name : "Aditya",
