@@ -28,6 +28,30 @@ const server = http.createServer((req, res) => {
             }
         });
     }
+    else if(req.url === "/changePassword" && req.method === "POST")
+    {
+        
+        let body = "";
+
+        req.on("data", (dataChunk) => {
+            body += dataChunk.toString();
+        });
+
+        req.on("end", async () => {
+            try {
+                const userDetails = JSON.parse(body);
+
+                const response = await changePassword(userDetails, FILE);
+
+                res.writeHead(200, { "Content-Type": "application/json" });
+                res.end(JSON.stringify(response));
+
+            } catch (error) {
+                res.writeHead(400);
+                res.end("Invalid JSON");
+            }
+        });
+    }
 });
 
 server.listen(PORT, () =>
