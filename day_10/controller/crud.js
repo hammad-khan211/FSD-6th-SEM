@@ -26,13 +26,23 @@ const updateUsers = async(email , userDetails) => {
         console.log("Cannot update user " , error.message);
     }
 }
-updateUsers("abcd@gmail.com" , {password: "newabc123"});
+
+const deleteUser = async(email) => {
+    try {
+        await User.findOneAndDelete({email : email});
+        console.log("USer deleted successfully");
+    } catch (error) {
+        console.log("Some error occured while deleting the user", error.message);
+    }
+}
+deleteUser("abcd@gmail.com");
+// updateUsers("abcd@gmail.com" , {password: "newabc123"});
 // readUsers();
 // createUser(
 //     {
-//         name : "Hammad",
-//         email : "ahmadhammadkhan21112005@gmail.com",
-//         password: "ham123",
+//         name : "Aditya",
+//         email : "aditya@gmail.com",
+//         password: "adi123",
 //         gender: "Male"
 //     }
 // )

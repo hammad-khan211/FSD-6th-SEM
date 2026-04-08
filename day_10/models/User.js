@@ -19,7 +19,7 @@ const userSchema = mongoose.Schema({
         required : true,
         enum : [ "M" , "F" , "Male" , "Female" ]
     }
-})
+} , {timestamps : true});
 
 const User = mongoose.model("users" , userSchema);
 export default User;
